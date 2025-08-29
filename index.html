@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+<meta name="author" content="Nomad" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="application/ld+json">{
+"@context": "https://schema.org/",
+"@type": "Organization",
+"name": "Тест",
+"url": "https://example.com/",
+"logo": "https://example.com/logo.jpg",
+"telephone": "+7 900 444 55 88",
+"email": "test@mail.ru",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "Город",
+"streetAddress": "Адрес",
+"sameAs": [
+    "https://www.youtube.com/",
+    "https://web.telegram.org/",
+]
+}}
+</script>
+
+<title>Тест</title>
+
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/swiper-bundle.min.css">
+
+</head>
+
+<body>
+    
+<header id="header" class="row site-header">
+<div class="col-0">
+
+    <div class="mobile-menu active-item active-bodyscroll">
+        <div class="mobile-menu__close-wrap">
+            <div class="mobile-menu__close close active" rel="mobile-menu">
+                <svg class="applied-filter__item-close-svg" width="12" height="12" viewBox="0 0 12 12">
+                    <use href="img/sprite.svg#close"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="mobile-menu__content">
+
+            <div class="mobile-menu__block">
+                <a class="btn btn--small mobile-menu__btn" href="">Театр</a>
+                <a class="btn btn--small mobile-menu__btn" href="">Музыка</a>
+                <a class="btn btn--small mobile-menu__btn" href="">Выставки</a>
+                <a class="btn btn--small mobile-menu__btn" href="">Кино</a>
+                <a class="btn btn--small mobile-menu__btn" href="">Фестивали и праздники</a>
+                <a class="btn btn--small mobile-menu__btn" href="">Образовательные мероприятия</a>
+            </div>
+            <div class="mobile-menu__block">
+                <select class="btn btn--small mobile-menu__select select" name="institutions">
+                  <option value="value1" selected>Учреждения</option>
+                  <option value="value2">Ещё что-то</option>
+                  <option value="value3">Ещё что-то</option>
+                </select>
+                <select class="btn btn--small mobile-menu__select select" name="news">
+                  <option value="value1" selected>Новости</option>
+                  <option value="value2">Ещё что-то</option>
+                  <option value="value3">Ещё что-то</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="main-menu">
+        <div class="mobile-menu-btn active-link" rel="mobile-menu">
+            <svg class="mobile-menu-btn__svg" width="50" height="50" viewBox="0 0 100 100">
+                <use href="img/sprite.svg#menu"></use>
+            </svg>
+        </div>
+        <div class="logo site-header__logo">
+            <a class="logo__link" href="">
+                Логотип
+            </a>
+        </div>
+        
+            <div class="main-menu__block">
+                <a class="btn btn--small main-menu__btn" href="">Театр</a>
+                <a class="btn btn--small main-menu__btn" href="">Музыка</a>
+                <a class="btn btn--small main-menu__btn" href="">Выставки</a>
+                <a class="btn btn--small main-menu__btn" href="">Кино</a>
+                <a class="btn btn--small main-menu__btn" href="">Фестивали и праздники</a>
+                <a class="btn btn--small main-menu__btn" href="">Образовательные мероприятия</a>
+            </div>
+        
+        
+            <div class="main-menu__block">
+                <select class="btn btn--small main-menu__select select" name="institutions">
+                  <option value="value1" selected>Учреждения</option>
+                  <option value="value2">Ещё что-то</option>
+                  <option value="value3">Ещё что-то</option>
+                </select>
+                <select class="btn btn--small main-menu__select select" name="news">
+                  <option value="value1" selected>Новости</option>
+                  <option value="value2">Ещё что-то</option>
+                  <option value="value3">Ещё что-то</option>
+                </select>
+            </div>
+        
+        <div class="site-header__search">
+            <form class="search-form" action="">
+              <input type="search" id="search" class="search-form__input" name="search" placeholder="Поиск по сайту" />
+              <button type="submit" class="search-form__sumnit">
+                <svg class="search-form__svg" width="20" height="20" viewBox="0 0 20 20">
+                    <use href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+</div><!-- /col -->
+</header>
+
+<main id="main">
+
+    <div class="col-0 row hero">
+        <div class="hero__col">
+
+            <div class="main-event-slider swiper">
+                <div class="main-event-slider__list swiper-wrapper">
+                    <article class="event event--big main-event-slider__item swiper-slide">
+                        <div class="event__content">
+                            <header class="event__header">
+                                <h1 class="event__title  size-5">Заголовок ближайшего мероприятия</h1>
+                                <div class="date">12-15 сентября</div>
+                            </header>
+                            <footer class="event__footer">
+                                <a class="btn" href="">Подробнее</a>
+                                <div class="event__thumb">
+                                    <svg class="svg-img-example" width="213" height="213" viewBox="0 0 213 213">
+                                        <use href="img/sprite.svg#img-example"></use>
+                                    </svg>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="event event--big main-event-slider__item swiper-slide">
+                        <div class="event__content">
+                            <header class="event__header">
+                                <h1 class="event__title  size-5">Заголовок следующего мероприятия</h1>
+                                <div class="date">12-15 сентября</div>
+                            </header>
+                            <footer class="event__footer">
+                                <a class="btn" href="">Подробнее</a>
+                                <div class="event__thumb">
+                                    <svg class="svg-img-example" width="213" height="213" viewBox="0 0 213 213">
+                                        <use href="img/sprite.svg#img-example"></use>
+                                    </svg>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+                <div class="main-event-slider__nav">
+                    <div class="pagination">
+                        <div class="pagination__arrow pagination__arrow--prev">
+                            <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                                <use href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="pagination__arrow pagination__arrow--next">
+                            <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                                <use href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hero__col">
+
+            <div class="recommended-events">
+                <h2 class="size-4 recommended-events__title">Рекомендуемые редакцией мероприятия</h2>
+                <div class="recommended-events__list">
+                    <div class="recommended-events__item">
+                        <article class="event event--small">
+                            <div class="row event__row">
+                                <div class="event__thumb thumb thumb--small">
+                                    <img class="thumb__img" src="" >
+                                </div>
+                                <div class="event__content">
+                                    <header class="event__header">
+                                        <h4 class="event__title  size-4">Заголовок</h4>
+                                        <div class="datetime">6 сентября - 14:00</div>
+                                    </header>                                
+                                    <footer class="event__footer">
+                                        <div class="tags">
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                        </div>
+                                        <a class="event__more" href="">
+                                            <svg class="event__more-svg" width="40" height="40" viewBox="0 0 40 40">
+                                                <use href="img/sprite.svg#more"></use>
+                                            </svg>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recommended-events__item">
+                        <article class="event event--small">
+                            <div class="row event__row">
+                                <div class="event__thumb thumb thumb--small">
+                                    <img class="thumb__img" src="" >
+                                </div>
+                                <div class="event__content">
+                                    <header class="event__header">
+                                        <h4 class="event__title  size-4">Заголовок</h4>
+                                        <div class="datetime">6 сентября - 14:00</div>
+                                    </header>                                
+                                    <footer class="event__footer">
+                                        <div class="tags">
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                        </div>
+                                        <a class="event__more" href="">
+                                            <svg class="event__more-svg" width="40" height="40" viewBox="0 0 40 40">
+                                                <use href="img/sprite.svg#more"></use>
+                                            </svg>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recommended-events__item">
+                        <article class="event event--small">
+                            <div class="row event__row">
+                                <div class="event__thumb thumb thumb--small">
+                                    <img class="thumb__img" src="" >
+                                </div>
+                                <div class="event__content">
+                                    <header class="event__header">
+                                        <h4 class="event__title  size-4">Заголовок</h4>
+                                        <div class="datetime">6 сентября - 14:00</div>
+                                    </header>                                
+                                    <footer class="event__footer">
+                                        <div class="tags">
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                        </div>
+                                        <a class="event__more" href="">
+                                            <svg class="event__more-svg" width="40" height="40" viewBox="0 0 40 40">
+                                                <use href="img/sprite.svg#more"></use>
+                                            </svg>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recommended-events__item">
+                        <article class="event event--small">
+                            <div class="row event__row">
+                                <div class="event__thumb thumb thumb--small">
+                                    <img class="thumb__img" src="" >
+                                </div>
+                                <div class="event__content">
+                                    <header class="event__header">
+                                        <h4 class="event__title  size-4">Заголовок</h4>
+                                        <div class="datetime">6 сентября - 14:00</div>
+                                    </header>                                
+                                    <footer class="event__footer">
+                                        <div class="tags">
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                            <div class="btn btn--small event__tag">тег
+                                            </div>
+                                        </div>
+                                        <a class="event__more" href="">
+                                            <svg class="event__more-svg" width="40" height="40" viewBox="0 0 40 40">
+                                                <use href="img/sprite.svg#more"></use>
+                                            </svg>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="pagination align-center">
+                    <div class="pagination__arrow pagination__arrow--prev">
+                        <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                            <use href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="pagination__pages">
+                        <div class="pagination__page">1</div>
+                        <div class="pagination__page pagination__page--active">2</div>
+                        <div class="pagination__page">3</div>
+                        <div class="pagination__page">4</div>
+                        <div class="pagination__ellipsis">...</div>
+                        <div class="pagination__page">108</div>
+                    </div>
+                    <div class="pagination__arrow pagination__arrow--next">
+                        <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                            <use href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>        
+    </div>
+
+    <div class="col-0 row wrapper">
+        <div class="col wrapper__side">
+
+            <div class="filter">
+
+                <div class="filter__item">
+                    <h4 class="size-4 filter__item-title">Дата</h4>
+                    <div class="calendar">
+                        <div class="calendar__filter">
+                            <div class="month">
+                                <select class="select" name="month">
+                                  <option value="1">Январь</option>
+                                  <option value="2">Февраль</option>
+                                  <option value="3">Март</option>
+                                  <option value="4">Апрель</option>
+                                  <option value="5">Май</option>
+                                  <option value="6">Июнь</option>
+                                  <option value="7">Июль</option>
+                                  <option value="8" selected>Август</option>
+                                  <option value="9">Сентябрь</option>
+                                  <option value="10">Октябрь</option>
+                                  <option value="11">Ноябрь</option>
+                                  <option value="12">Декабрь</option>
+                                </select>
+                            </div>
+                            <div class="year">
+                                <select class="select" name="year">
+                                  <option value="2020">2020</option>
+                                  <option value="2021">2021</option>
+                                  <option value="2022">2022</option>
+                                  <option value="2023">2023</option>
+                                  <option value="2024">2024</option>
+                                  <option value="2025" selected>2025</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="weekdays">
+                            <div class="weekdays__item">пн</div>
+                            <div class="weekdays__item">вт</div>
+                            <div class="weekdays__item">ср</div>
+                            <div class="weekdays__item">чт</div>
+                            <div class="weekdays__item">пт</div>
+                            <div class="weekdays__item">сб</div>
+                            <div class="weekdays__item">вс</div>
+                        </div>
+                        <div class="days">
+                            <div class="days__item">28</div>
+                            <div class="days__item">29</div>
+                            <div class="days__item">30</div>
+                            <div class="days__item">31</div>
+                            <div class="days__item">01</div>
+                            <div class="days__item days__item--weekend">02</div>
+                            <div class="days__item days__item--weekend">03</div>
+                            <div class="days__item">04</div>
+                            <div class="days__item">05</div>
+                            <div class="days__item days__item--weekend">06</div>
+                            <div class="days__item days__item--unavailable">07</div>
+                            <div class="days__item days__item--unavailable">08</div>
+                            <div class="days__item days__item--weekend">09</div>
+                            <div class="days__item days__item--weekend">10</div>
+                            <div class="days__item days__item--unavailable">11</div>
+                            <div class="days__item days__item--weekend">12</div>
+                            <div class="days__item">13</div>
+                            <div class="days__item">14</div>
+                            <div class="days__item">15</div>
+                            <div class="days__item days__item--weekend">16</div>
+                            <div class="days__item days__item--weekend">17</div>
+                            <div class="days__item">18</div>
+                            <div class="days__item">19</div>
+                            <div class="days__item">20</div>
+                            <div class="days__item">21</div>
+                            <div class="days__item">22</div>
+                            <div class="days__item days__item--weekend">23</div>
+                            <div class="days__item days__item--weekend">24</div>
+                            <div class="days__item">25</div>
+                            <div class="days__item">26</div>
+                            <div class="days__item">27</div>
+                            <div class="days__item">28</div>
+                            <div class="days__item">29</div>
+                            <div class="days__item days__item--weekend">30</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter__item">
+                    <h4 class="size-4 filter__item-title">Учреждения</h4>
+                    <div class="inputs-block inputs-block--institutions active-item">
+                        <div class="inputs-block__item">
+                            <input class="checkb" type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                    </div>
+                    <a class="btn btn--small filter__btn active-link" rel="inputs-block--institutions" data-alt-label="Меньше">Ещё</a>
+                </div>
+
+                <div class="filter__item">
+                    <h4 class="size-4 filter__item-title">Категории</h4>
+                    <div class="inputs-block inputs-block--categories active-item">
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                        <div class="inputs-block__item">
+                            <input type="checkbox" name="" value="1">Пункт категории
+                        </div>
+                    </div>
+                    <a class="btn btn--small filter__btn active-link" rel="inputs-block--categories" data-alt-label="Меньше">Ещё</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col wrapper__main">
+
+            <div class="row">
+                <div class="applied-filter">
+                    <div class="btn btn--small applied-filter__item">
+                        Выбранный пункт фильтра
+                        <div class="applied-filter__item-close">
+                            <svg class="applied-filter__item-close-svg" width="12" height="12" viewBox="0 0 12 12">
+                                <use href="img/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="btn btn--small applied-filter__item">
+                        Выбранный пункт фильтра
+                        <div class="applied-filter__item-close">
+                            <svg class="applied-filter__item-close-svg" width="12" height="12" viewBox="0 0 12 12">
+                                <use href="img/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="btn btn--small applied-filter__item">
+                        Выбранный пункт фильтра
+                        <div class="applied-filter__item-close">
+                            <svg class="applied-filter__item-close-svg" width="12" height="12" viewBox="0 0 12 12">
+                                <use href="img/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="btn btn--small applied-filter__btn">
+                        Сбросить фильтр
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sorting">
+                    <select class="select" name="sorting">
+                        <option value="down">По убыванию</option>
+                        <option value="up">По возрастанию</option>
+                        <option value="none" selected>Сортировать</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="row row--wrap">
+                <div class="events">
+                    <div class="events__list">
+                        <div class="events__item">
+                            <article class="event">
+                                <div class="row event__row">                                    
+                                    <div class="event__thumb thumb">
+                                        <img class="thumb__img" src="" >
+                                    </div>
+                                    <div class="event__content">
+                                        <header class="event__header">
+                                            <h3 class="event__title size-3">Заголовок</h3>
+                                            <div class="datetime">6 сентября - 14:00</div>
+                                        </header>
+                                        <footer class="event__footer">
+                                            <div class="tags event__tags">
+                                                <div class="btn btn--small event__tag">тег
+                                                </div>
+                                                <div class="btn btn--small event__tag">тег
+                                                </div>
+                                            </div>
+                                            <a class="event__more" href="">
+                                                <svg class="event__more-svg" width="40" height="40" viewBox="0 0 40 40">
+                                                    <use href="img/sprite.svg#more"></use>
+                                                </svg>
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="events__item">
+                            <article class="event">
+                                <div class="row event__row">                                    
+                                    <div class="event__thumb thumb">
+                                        <img class="thumb__img" src="" >
+                                    </div>
+                                    <div class="event__content">
+                                        <header class="event__header">
+                                            <h3 class="event__title size-3">Заголовок</h3>
+                                            <div class="datetime">6 сентября - 14:00</div>
+                                        </header>
+                                        <footer class="event__footer">
+                                            <div class="tags event__tags">
+                                                <div class="btn btn--small event__tag">тег
+                                                </div>
+                                                <div class="btn btn--small event__tag">тег
+                                                </div>
+                                            </div>
+                                            <a class="event__more" href="">
+                                                <svg class="event__more-svg" width="40" height="40" viewBox="0 0 40 40">
+                                                    <use href="img/sprite.svg#more"></use>
+                                                </svg>
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="events__item">
+                            <article class="event">
+                                <div class="row event__row">                                    
+                                    <div class="event__thumb thumb">
+                                        <img class="thumb__img" src="" >
+                                    </div>
+                                    <div class="event__content">
+                                        <header class="event__header">
+                                            <h3 class="event__title size-3">Заголовок</h3>
+                                            <div class="datetime">6 сентября - 14:00</div>
+                                        </header>
+                                        <footer class="event__footer">
+                                            <div class="tags event__tags">
+                                                <div class="btn btn--small event__tag">тег
+                                                </div>
+                                                <div class="btn btn--small event__tag">тег
+                                                </div>
+                                            </div>
+                                            <a class="event__more" href="">
+                                                <svg class="event__more-svg" width="40" height="40" viewBox="0 0 40 40">
+                                                    <use href="img/sprite.svg#more"></use>
+                                                </svg>
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="pagination events__pagination">
+                        <div class="pagination__arrow pagination__arrow--prev">
+                            <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                                <use href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="pagination__pages">
+                            <div class="pagination__page">1</div>
+                            <div class="pagination__page pagination__page--active">2</div>
+                            <div class="pagination__page">3</div>
+                            <div class="pagination__page">4</div>
+                            <div class="pagination__ellipsis">...</div>
+                            <div class="pagination__page">108</div>
+                        </div>
+                        <div class="pagination__arrow pagination__arrow--next">
+                            <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                                <use href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tags tags--all-tags">
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item">тег</div>
+                    <div class="btn btn--small tags__item tags__item--all-tags">Все теги
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row--wrap active-box active-alone active-last">
+                <div class="articles-tabs">
+                    <a class="active-link active btn btn--small articles-tabs__item" href="#" rel="articles-item-1">Новости</a>
+                    <a class="active-link btn btn--small articles-tabs__item" href="#" rel="articles-item-2">Авторские статьи</a>
+                    <a class="active-link btn btn--small articles-tabs__item" href="#" rel="articles-item-3">Меры поддержки</a>
+                </div>
+                <div class="tabs">
+                    <div class="col-1 active-item tabs__item articles-item-1 active">
+
+                        <div class="news">
+                            <h2 class="size-4 news__title">Новости</h2>
+                            <div class="news__list">
+                                <div class="news__item">
+                                    <article class="news-item">
+                                        <div class="thumb thumb--wide news-item__thumb">
+                                            <img class="thumb__img" src="" >
+                                        </div>
+                                        <header class="news-item__header">
+                                            <h3 class="size-3">Заголовок</h3>
+                                        </header>
+                                        <div class="news-item__description">
+                                            Краткое описание
+                                        </div>
+                                        <a class="news-item__more" href="">Читать подробнее</a>
+                                    </article>
+                                </div>
+                                <div class="news__item">
+                                    <article class="news-item">
+                                        <div class="thumb thumb--wide news-item__thumb">
+                                            <img class="thumb__img" src="" >
+                                        </div>
+                                        <header class="news-item__header">
+                                            <h3 class="size-3">Заголовок</h3>
+                                        </header>
+                                        <div class="news-item__description">
+                                            Краткое описание
+                                        </div>
+                                        <a class="news-item__more" href="">Читать подробнее</a>
+                                    </article>
+                                </div>
+                                <div class="news__item">
+                                    <article class="news-item">
+                                        <div class="thumb thumb--wide news-item__thumb">
+                                            <img class="thumb__img" src="" >
+                                        </div>
+                                        <header class="news-item__header">
+                                            <h3 class="size-3">Заголовок</h3>
+                                        </header>
+                                        <div class="news-item__description">
+                                            Краткое описание
+                                        </div>
+                                        <a class="news-item__more" href="">Читать подробнее</a>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="pagination news__pagination">
+                                <div class="pagination__arrow pagination__arrow--prev">
+                                    <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                                        <use href="img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="pagination__pages">
+                                    <div class="pagination__page">1</div>
+                                    <div class="pagination__page pagination__page--active">2</div>
+                                    <div class="pagination__page">3</div>
+                                    <div class="pagination__page">4</div>
+                                    <div class="pagination__ellipsis">...</div>
+                                    <div class="pagination__page">108</div>
+                                </div>
+                                <div class="pagination__arrow pagination__arrow--next">
+                                    <svg class="pagination__arrow-svg" width="13" height="20" viewBox="0 0 13 20">
+                                        <use href="img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-1 active-item tabs__item articles-item-2">
+                        <h2>Авторские статьи</h2>
+
+
+
+                    </div>
+
+                    <div class="col-1 active-item tabs__item articles-item-3">
+                        <h2>Меры поддержки</h2>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+
+<footer id="footer" class="site-footer">
+    <div class="col-0">
+
+        <div class="site-footer__panel">
+            <div class="row">
+                <div class="site-footer__logo">
+                    <div class="logo">
+                        <a class="logo__link" href="">
+                            Логотип
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row site-footer__row">
+                <div class="site-footer__col">
+                    <div class="site-footer__contacts-item">test@mail.ru</div>
+                    <div class="site-footer__contacts-item">+7 900 444 55 88</div>
+                </div>
+                <div class="site-footer__col align-center">
+                    <div class="site-footer__social-icones social-icones">
+                        <a class="social-icones__item" target="_blank" href="">
+                            <svg class="social-icones__item-svg" width="24" height="18" viewBox="0 0 24 18">
+                                <use href="img/sprite.svg#icon-yt"></use>
+                            </svg>
+                        </a>
+                        <a class="social-icones__item" target="_blank" href="">
+                            <svg class="social-icones__item-svg" height="20" viewBox="0 0 24 20">
+                                <use href="img/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="site-footer__col site-footer__col--right">
+                    <div class="site-footer__tags-cloud">Облако тегов</div>
+                    <div class="site-footer__description">SEO-текст с кратким описанием сайта</div>
+                    <div class="site-footer__copyright">
+                        &copy; Все права защищены, 2025 
+                    </div>           
+                  
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /col-0 -->
+
+</footer>
+
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/swiper-bundle.min.js"></script>
+
+</body>
+</html>
